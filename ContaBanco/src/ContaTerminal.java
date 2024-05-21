@@ -3,13 +3,8 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        // os argumentos começam com indice 0
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        // String nome = args[0];
-        // int agencia = Integer.valueOf(args[1]);
-        // int numero = Integer.valueOf(args[2]); // vamos falar sobre Wrappers
-        // double saldo = Double.valueOf(args[3]);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println(
                 "###############################################################################################");
@@ -21,17 +16,18 @@ public class ContaTerminal {
         int numero = scanner.nextInt();
         System.out.println(
                 "-----------------------------------------------------------------------------------------------");
-        System.out.println("Qual o seu nome completo? ");
+        System.out.println("Qual é o seu nome? ");
         String nome = scanner.next();
         System.out.println(
-                "------------------------------------------------------------------------------------------------");
+                "-----------------------------------------------------------------------------------------------");
         System.out.println("Por favor, digite o seu saldo !");
         double saldo = scanner.nextDouble();
-        System.out.println(
-                "###############################################################################################");
+        System.out
+                .println(
+                        "###############################################################################################");
 
         System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia
-                + "], conta " + numero + " e seu saldo " + saldo + " já está disponível para saque");
+                + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque");
 
     }
 }
